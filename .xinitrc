@@ -52,6 +52,7 @@ flameshot &
 fcitx5 &
 picom &
 slstatus &
-feh --fil--bg ~/wallpaper/46.png
+feh --bg-fil ~/wallpaper/46.png &
 
 exec dwm
+

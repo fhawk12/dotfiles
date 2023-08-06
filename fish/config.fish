@@ -5,13 +5,15 @@ end
 export EDITOR=nvim
 set -gx PATH /home/fhawk/.local/bin $PATH
 
-alias ra=ranger
 alias gc="git clone "
+alias gst="git status"
+
+alias lg=lazygit
+alias ra=ranger
 alias fh=neofetch
 alias keymap="cd ~; xmodmap .Xmodmap"
 alias colemak="setxkbmap us -variant colemak"
 alias us="setxkbmap us"
-alias lg=lazygit
 
 alias pro="export https_proxy=http://127.0.0.1:7890;export http_proxy=http://127.0.0.1:7890;export all_proxy=socks5://127.0.0.1:7890"
 
