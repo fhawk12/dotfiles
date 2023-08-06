@@ -12,8 +12,8 @@ return {
 				formatting.stylua,
 				formatting.clang_format,
 
-				diagnost.clang_check,
-				diagnost.cppcheck,
+				-- diagnost.clang_check,
+				-- diagnost.cppcheck,
 
 				code_action.refactoring,
         code_action.gitsigns
