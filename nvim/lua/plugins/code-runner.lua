@@ -7,7 +7,7 @@ return {
   config = function()
     require("code_runner").setup({
       -- put here the commands by filetype
-      focus = true,
+      focus = false,
       mode = "term",
       filetype = {
         java = "cd $dir && javac $fileName && java $fileNameWithoutExt",
