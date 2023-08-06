@@ -1,7 +1,7 @@
 local icons = {
 	Text = "󰉿 ",
 	Method = "󰆧 ",
-	Function = "󰊕",
+	Function = "󰊕 ",
 	Constructor = " ",
 	Field = "󰜢 ",
 	Variable = "α ",
@@ -17,7 +17,7 @@ local icons = {
 	File = "󰈙 ",
 	Folder = "󰉋 ",
 	Constant = "󰏿 ",
-	Event = "",
+	Event = " ",
 	Operator = "󰆕 ",
 	Array = "󰅪 ",
 	Boolean = " ",

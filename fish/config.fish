@@ -12,6 +12,7 @@ alias gst="git status"
 alias lg=lazygit
 alias ra=ranger
 alias fh=neofetch
+alias jo=joshuto
 alias keymap="cd ~; xmodmap .Xmodmap"
 alias colemak="setxkbmap us -variant colemak"
 alias us="setxkbmap us"
