@@ -3,6 +3,7 @@ if status is-interactive
 end
 
 export EDITOR=nvim
+
 set -gx PATH /home/fhawk/.local/bin $PATH
 
 alias gc="git clone "
