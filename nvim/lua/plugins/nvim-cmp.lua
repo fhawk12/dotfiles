@@ -25,7 +25,7 @@ return {
     local cmp_autopairs = require("nvim-autopairs.completion.cmp")
     local luasnip = require("luasnip")
 
-    require("luasnip.loaders.from_vscode").lazy_load()
+    -- require("luasnip.loaders.from_vscode").lazy_load()
     require("luasnip.loaders.from_snipmate").lazy_load({ path = { "~/.config/nvim/snippets" } })
 
     local has_words_before = function()
