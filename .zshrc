@@ -78,3 +78,7 @@ alias fh="neofetch"
 alias lg="lazygit"
 
 eval "$(zoxide init zsh)"
+
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+### RANDOM COLOR SCRIPT ###
+colorscript random
