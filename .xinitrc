@@ -52,7 +52,8 @@ flameshot &
 fcitx5 &
 picom &
 slstatus &
-feh --bg-fil ~/wallpaper/51.png &
+# feh --bg-fil ~/wallpaper/51.png &
+nitrogen --restore
 
 exec dwm
 
