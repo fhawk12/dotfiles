@@ -34,7 +34,7 @@ source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
 #           |___/
 #
 
-
+export EDITOR=nvim
 
 # Changing "ls" to "exa"
 alias ls='exa -al --color=always --group-directories-first' # my preferred listing

@@ -1,5 +1,5 @@
-import:
- - ~/.config/alacritty/themes/themes/dracula.yaml
+# import:
+# - ~/.config/alacritty/themes/themes/dracula.yaml
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
 
 # Import additional configuration files
@@ -172,7 +172,7 @@ font:
     #style: Bold Italic
 
   # Point size
-  size: 8.0
+  size: 12.0
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -911,3 +911,39 @@ key_bindings:
 
   # Highlight window damage information.
   #highlight_damage: false
+
+
+# Alacritty Nord theme
+colors:
+  # Default colors
+  primary:
+    background: '#2E3440'
+    foreground: '#ECEFF4'
+  # Normal colors
+  normal:
+    black:   '#3B4252'
+    red:     '#BF616A'
+    green:   '#A3BE8C'
+    yellow:  '#EBCB8B'
+    blue:    '#81A1C1'
+    magenta: '#B48EAD'
+    cyan:    '#88C0D0'
+    white:   '#E5E9F0'
+  # Bright colors
+  bright:
+    black:   '#4C566A'
+    red:     '#BF616A'
+    green:   '#A3BE8C'
+    yellow:  '#EBCB8B'
+    blue:    '#81A1C1'
+    magenta: '#B48EAD'
+    cyan:    '#8FBCBB'
+    white:   '#ECEFF4'
+  # Cursor color
+  cursor:
+    cursor:  '#ECEFF4'
+    text:    '#2E3440'
+  # Selection background color
+  selection:
+    text:    '#2E3440'
+    background: '#88C0D0'
