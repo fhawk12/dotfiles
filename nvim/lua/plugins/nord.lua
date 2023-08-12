@@ -1,5 +1,7 @@
 return {
   "shaunsingh/nord.nvim",
+  lazy = true,
+  enabled = false,
   opts = {
     nord = {
       --16 colors

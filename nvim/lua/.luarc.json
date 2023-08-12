@@ -65,6 +65,7 @@
         "/home/fhawk/.local/share/nvim/lazy/telescope-dap.nvim/lua",
         "/home/fhawk/.local/share/nvim/lazy/dressing.nvim/lua",
         "/home/fhawk/.config/nvim/lua",
-        "${3rd}/luv/library"
+        "${3rd}/luv/library",
+        "${3rd}/luassert/library"
     ]
 }

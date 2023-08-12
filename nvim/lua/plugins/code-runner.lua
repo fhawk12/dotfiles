@@ -15,7 +15,8 @@ return {
         perl = "perl $fileName",
         typescript = "deno run",
         rust = "cd $dir && rustc $fileName && $dir/$fileNameWithoutExt",
-        cpp = "cd $dir && g++ -g *.cpp -o $fileNameWithoutExt && $dir/$fileNameWithoutExt",
+        -- cpp = "cd $dir && g++ -g *.cpp -o $fileNameWithoutExt && $dir/$fileNameWithoutExt",
+        cpp = "cd $dir && g++ -g $fileName -o $fileNameWithoutExt && $dir/$fileNameWithoutExt",
         lua = "cd $dir && lua $fileName"
       },
     })
