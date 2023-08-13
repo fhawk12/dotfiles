@@ -33,8 +33,20 @@ source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
 #|_| |_| |_|\__, | /___|___/_| |_|
 #           |___/
 #
+#
+
+
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+eval "bash ~/scripts/suckless"
+
+eval "$(zoxide init zsh)"
 
 export EDITOR=nvim
+
+
+# keyboard layout
+alias colemak="setxkbmap us -variant colemak"
+alias us="setxkbmap us"
 
 # Changing "ls" to "exa"
 alias ls='exa -al --color=always --group-directories-first' # my preferred listing
@@ -77,8 +89,5 @@ alias pro="export https_proxy=http://127.0.0.1:7890;export http_proxy=http://127
 alias fh="neofetch"
 alias lg="lazygit"
 
-eval "$(zoxide init zsh)"
 
-typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
-### RANDOM COLOR SCRIPT ###
-colorscript random
+
