@@ -39,7 +39,7 @@ map("n", "<C-Down>", "<cmd>resize -2<cr>", { desc = "Decrease window height" })
 map("n", "<C-Left>", "<cmd>vertical resize -2<cr>", { desc = "Decrease window width" })
 map("n", "<C-Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase window width" })
 
-map({ "n", "v" }, "<leader>fm", "<cmd>lua vim.lsp.buf.format()<cr>") -- format
+-- map({ "n", "v" }, "<leader>fm", "<cmd>lua vim.lsp.buf.format()<cr>") -- format
 map({ "n", "v" }, "<c-a>", "ggVG")                                   -- select all
 map({ "i", "v", "n", "s" }, "<C-s>", "<cmd>w<cr><esc>")              -- save file
 map("n", "<esc>", "<cmd>noh<cr>")                                    -- cancel highlight
@@ -48,17 +48,4 @@ map("n", "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<cr>")          -- rename
 map("n", "<leader>i", "<cmd>lua ToggleBoolean()<cr>")                -- toggle bool
 map("n", "<leader>h", "<cmd>lua vim.diagnostic.open_float()<cr>")    -- show diagnostic info
 
--- lsp
-map("n", "[d", vim.diagnostic.goto_prev)
-map("n", "]d", vim.diagnostic.goto_next)
-vim.api.nvim_create_autocmd("LspAttach", {
-  group = vim.api.nvim_create_augroup("UserLspConfig", {}),
-  callback = function(ev)
-    vim.bo[ev.buf].omnifunc = "v:lua.vim.lsp.omnifunc"
-    local opts = { buffer = ev.buf }
-    map("n", "<leader>k", vim.lsp.buf.hover, opts)
-    map("n", "<C-k>", vim.lsp.buf.signature_help, opts)
-    map("n", "<space>rn", vim.lsp.buf.rename, opts)
-    map({ "n", "v" }, "ca", vim.lsp.buf.code_action, opts)
-  end,
-})
+
