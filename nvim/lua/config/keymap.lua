@@ -7,13 +7,15 @@ vim.g.mapleader = " "
 map("n", "<leader>l", "<cmd>Lazy<cr>", { desc = "Lazy" })
 
 -- buffer movement
-map("n", "H", "<cmd>bprevious<CR>")
-map("n", "L", "<cmd>bnext<CR>")
+-- map("n", "H", "<cmd>bprevious<CR>")
+-- map("n", "L", "<cmd>bnext<CR>")
 
 -- cursor movement
 map({ "n", "v" }, "J", "5j")
 map({ "n", "v" }, "K", "5k")
 map({ "n", "v" }, "W", "5w")
+map({ "n", "v" }, "L", "$")
+map({ "n", "v" }, "H", "0")
 
 map("i", "<C-n>", "<Nop>", { noremap = true })
 map("i", "<C-p>", "<Nop>", { noremap = true })
@@ -40,8 +42,9 @@ map("n", "<C-Left>", "<cmd>vertical resize -2<cr>", { desc = "Decrease window wi
 map("n", "<C-Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase window width" })
 
 -- map({ "n", "v" }, "<leader>fm", "<cmd>lua vim.lsp.buf.format()<cr>") -- format
-map({ "n", "v" }, "<c-a>", "ggVG")                                   -- select all
+map({ "n", "v" }, "<C-a>", "ggVG", { noremap = true })               -- select all
 map({ "i", "v", "n", "s" }, "<C-s>", "<cmd>w<cr><esc>")              -- save file
+map("n", "<C-k>", "<C-a>", { noremap = true })                       -- number++
 map("n", "<esc>", "<cmd>noh<cr>")                                    -- cancel highlight
 map("n", "<leader>q", "<cmd>bd<cr>")                                 -- close buf
 map("n", "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<cr>")          -- rename

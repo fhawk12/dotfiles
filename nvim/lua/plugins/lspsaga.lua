@@ -17,7 +17,7 @@ return {
 		{ "[d",         "<cmd>Lspsaga diagnostic_jump_next<cr>" },
 		{ "]d",         "<cmd>Lspsaga diagnostic_jump_prev<cr>" },
 	},
-	config = function()
+	init = function()
 		require("lspsaga").setup({
       outline = {
         layout = "float",

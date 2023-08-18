@@ -1,6 +1,7 @@
 return {
   "Civitasv/cmake-tools.nvim",
   lazy = true,
+  enabled = false,
   keys = {
     { "<leader>rp", "<cmd>CMakeRun<cr>" }
   },
