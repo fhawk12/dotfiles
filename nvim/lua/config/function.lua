@@ -1,18 +1,18 @@
 ------ toggle bool ------
 function ToggleBoolean()
-  local word = vim.fn.expand("<cword>")
-  if is_bool(word) then
-    local res = not to_bool(word)
-    vim.cmd("normal! ciw" .. tostring(res))
-  end
+	local word = vim.fn.expand("<cword>")
+	if is_bool(word) then
+		local res = not to_bool(word)
+		vim.cmd("normal! ciw" .. tostring(res))
+	end
 end
 
 function is_bool(str)
-  return str == "true" or str == "false"
+	return str == "true" or str == "false"
 end
 
 function to_bool(str)
-  return str == "true"
+	return str == "true"
 end
 
 ------ jump stack trace -------
@@ -37,16 +37,38 @@ vim.api.nvim_create_autocmd({ "BufEnter" }, {
 
 ------ close all buf except current ------
 function close_all_buffers_except_current()
-  local current_bufnr = vim.fn.bufnr('%')
-  local buflist = vim.fn.getbufinfo({buflisted = 1})
+	local current_bufnr = vim.fn.bufnr("%")
+	local buflist = vim.fn.getbufinfo({ buflisted = 1 })
 
-  for _,buf in ipairs(buflist) do
-    if buf.bufnr ~= current_bufnr then
-      vim.cmd('bd' .. buf.bufnr)
-    end
-  end
+	for _, buf in ipairs(buflist) do
+		if buf.bufnr ~= current_bufnr then
+			vim.cmd("bd" .. buf.bufnr)
+		end
+	end
 end
 
 vim.cmd("command! -nargs=0 Bda lua vim.fn.close_all_buffers_except_current()")
 vim.fn["close_all_buffers_except_current"] = close_all_buffers_except_current
 
+------ toggle current word case ------
+function toggle_current_word_case()
+	local cur_word = tostring(vim.fn.expand("<cword>"))
+	local patter_upper = "([A-Z_]+)"
+	local patter_lower = "([a-z_]+)"
+	local new_word = ""
+	local flag = false
+
+	if string.match(cur_word, patter_lower) == cur_word then
+		new_word = string.upper(cur_word)
+		flag = true
+	end
+
+	if string.match(cur_word, patter_upper) == cur_word then
+		new_word = string.lower(cur_word)
+		flag = true
+	end
+
+	if flag then
+		vim.cmd("normal! ciw" .. new_word)
+	end
+end
