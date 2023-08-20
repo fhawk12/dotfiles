@@ -57,10 +57,12 @@ function toggle_current_word_case()
 	local patter_lower = "([a-z_]+)"
 
 	if string.match(cur_word, patter_lower) == cur_word then
-    vim.cmd(":normal! viwU")
+		vim.cmd(":normal! viwU")
+		vim.cmd(":normal! e")
 	end
 
 	if string.match(cur_word, patter_upper) == cur_word then
-    vim.cmd(":normal! viwu")
+		vim.cmd(":normal! viwu")
+		vim.cmd(":normal! e")
 	end
 end
