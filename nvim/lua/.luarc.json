@@ -5,7 +5,8 @@
         "is_continue_or_break",
         "vim",
         "close_all_buffer_except_current",
-        "close_all_buffers_except_current"
+        "close_all_buffers_except_current",
+        "toggle_current_word_case"
     ],
     "workspace.library": [
         "/home/fhawk/.local/share/nvim/lazy/neodev.nvim/types/nightly",

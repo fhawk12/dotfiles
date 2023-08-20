@@ -55,20 +55,12 @@ function toggle_current_word_case()
 	local cur_word = tostring(vim.fn.expand("<cword>"))
 	local patter_upper = "([A-Z_]+)"
 	local patter_lower = "([a-z_]+)"
-	local new_word = ""
-	local flag = false
 
 	if string.match(cur_word, patter_lower) == cur_word then
-		new_word = string.upper(cur_word)
-		flag = true
+    vim.cmd(":normal! viwU")
 	end
 
 	if string.match(cur_word, patter_upper) == cur_word then
-		new_word = string.lower(cur_word)
-		flag = true
-	end
-
-	if flag then
-		vim.cmd("normal! ciw" .. new_word)
+    vim.cmd(":normal! viwu")
 	end
 end

@@ -49,6 +49,7 @@ map("n", "<esc>", "<cmd>noh<cr>")                                    -- cancel h
 map("n", "<leader>q", "<cmd>bd<cr>")                                 -- close buf
 map("n", "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<cr>")          -- rename
 map("n", "<leader>i", "<cmd>lua ToggleBoolean()<cr>")                -- toggle bool
+map("n", "<leader>u", "<cmd>lua toggle_current_word_case()<cr>")     -- toggle current word case
 map("n", "<leader>h", "<cmd>lua vim.diagnostic.open_float()<cr>")    -- show diagnostic info
 
 
