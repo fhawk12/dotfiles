@@ -68,7 +68,6 @@ alias gst="git status" # 'status' is protected name so using 'gst' instead
 
 # app
 alias ra="ranger"
-alias jo="joshuto"
 
 #pacman
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages

@@ -99,7 +99,7 @@ keymap = [
   { keys = [":"], command = ":" },
   { keys = [";"], command = ":" },
 
-  { keys = ["S"], command = "shell fish" },
+  { keys = ["S"], command = "shell zsh" },
   { keys = ["ctrl+g"], command = "shell lazygit" },
 
   { keys = ["'"], command = ":shell " },
