@@ -4,7 +4,6 @@ return {
 		{ "<leader>rn", "<cmd>Lspsaga rename<cr>" },
 		{ "<leader>k",  "<cmd>Lspsaga hover_doc<cr>" },
 		{ "<leader>o",  "<cmd>Lspsaga outline<cr>" },
-		{ "<leader>rn", "<cmd>Lspsaga rename<cr>" },
 		{ "<leader>fd", "<cmd>Lspsaga finder<cr>" },
 		{ "<C-\\>",     "<cmd>Lspsaga term_toggle<cr>", mode = {"n", "t"} },
 		{ "co",         "<cmd>Lspsaga outgoing_calls<cr>" },

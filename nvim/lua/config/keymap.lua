@@ -44,7 +44,7 @@ map("n", "<C-Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase window w
 -- map({ "n", "v" }, "<leader>fm", "<cmd>lua vim.lsp.buf.format()<cr>") -- format
 map({ "n", "v" }, "<C-a>", "ggVG", { noremap = true })               -- select all
 map({ "i", "v", "n", "s" }, "<C-s>", "<cmd>w<cr><esc>")              -- save file
-map("n", "<C-k>", "<C-a>", { noremap = true })                       -- number++
+-- map("n", "<C-k>", "<C-a>", { noremap = true })                       -- number++
 map("n", "<esc>", "<cmd>noh<cr>")                                    -- cancel highlight
 map("n", "<leader>q", "<cmd>bd<cr>")                                 -- close buf
 map("n", "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<cr>")          -- rename
