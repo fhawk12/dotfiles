@@ -7,15 +7,16 @@ vim.g.mapleader = " "
 map("n", "<leader>l", "<cmd>Lazy<cr>", { desc = "Lazy" })
 
 -- buffer movement
--- map("n", "H", "<cmd>bprevious<CR>")
--- map("n", "L", "<cmd>bnext<CR>")
+map("n", "H", "<cmd>bprevious<CR>")
+map("n", "L", "<cmd>bnext<CR>")
 
 -- cursor movement
 map({ "n", "v" }, "J", "5j")
 map({ "n", "v" }, "K", "5k")
 map({ "n", "v" }, "W", "5w")
-map({ "n", "v" }, "L", "$")
-map({ "n", "v" }, "H", "0")
+
+-- map({ "n", "v" }, "L", "$")
+-- map({ "n", "v" }, "H", "0")
 
 map("i", "<C-n>", "<Nop>", { noremap = true })
 map("i", "<C-p>", "<Nop>", { noremap = true })
