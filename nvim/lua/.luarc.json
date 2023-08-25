@@ -6,7 +6,9 @@
         "vim",
         "close_all_buffer_except_current",
         "close_all_buffers_except_current",
-        "toggle_current_word_case"
+        "toggle_current_word_case",
+        "delete_excutable_file",
+        "delete_excutable_files"
     ],
     "workspace.library": [
         "/home/fhawk/.local/share/nvim/lazy/neodev.nvim/types/nightly",

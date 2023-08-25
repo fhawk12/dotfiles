@@ -66,3 +66,11 @@ function toggle_current_word_case()
 		vim.cmd(":normal! e")
 	end
 end
+
+------ delete executable files ------
+function delete_excutable_files()
+  local get_name_cmd = "find . -type f -executable"
+  local files = vim.fn.system(get_name_cmd)
+  local delete_cmd = "rm -f " .. files
+  vim.fn.system(delete_cmd)
+end
