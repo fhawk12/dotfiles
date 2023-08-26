@@ -21,10 +21,11 @@ compinit
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-completions/zsh-completions.plugin.zsh
-source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# theme
+fpath+=($HOME/.zsh/pure)
+autoload -U promptinit; promptinit
+prompt pure
 
 #                           _
 # _ __ ___  _   _   _______| |__
@@ -35,9 +36,6 @@ source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
 #
 #
 
-
-typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
-eval "bash ~/scripts/suckless"
 
 eval "$(zoxide init zsh)"
 
