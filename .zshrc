@@ -82,7 +82,8 @@ alias rm='rm -i'
 
 # misc
 alias keymap="cd ~; xmodmap .Xmodmap"
-alias pro="export https_proxy=http://127.0.0.1:7890;export http_proxy=http://127.0.0.1:7890;export all_proxy=socks5://127.0.0.1:7890"
+ip=$(/home/fhawk/.config/scripts/get_ip_from_etc.sh)
+alias pro="export https_proxy=http://$ip:7890;export http_proxy=http://$ip:7890;export all_proxy=socks5://$ip:7890"
 alias fh="neofetch"
 alias lg="lazygit"
 
