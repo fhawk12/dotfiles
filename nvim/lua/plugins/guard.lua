@@ -9,6 +9,7 @@ return {
     local ft = require("guard.filetype")
     ft("c"):fmt("clang-format")
     ft("cpp"):fmt("clang-format")
+    ft("cmake"):fmt("clang-format")
     ft("lua"):fmt("stylua")
     ft("python"):fmt("black")
     ft("sh"):fmt("lsp")

@@ -13,6 +13,9 @@ return {
 		local lspconfig = require("lspconfig")
 		-- Setup language servers.
 		lspconfig.lua_ls.setup({})
+		lspconfig.gopls.setup({})
+		lspconfig.pyright.setup({})
+		lspconfig.cmake.setup({})
 		lspconfig.clangd.setup({ capabilities = { offsetEncoding = "utf-8" } })
 		lspconfig.jdtls.setup({})
 	end,
