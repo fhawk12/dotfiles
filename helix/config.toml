@@ -1,0 +1,35 @@
+theme="rose_pine"
+
+[editor]
+cursorline = true
+line-number = "relative"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.statusline]
+left = ["mode", "spinner", "diagnostics"]
+center = ["file-name"]
+right = ["selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[keys.normal]
+0 = "goto_line_start"
+C-s = ":w"
+
+[keys.select]
+0 = "goto_line_start"
+
+[keys.insert]
+"C-[" = "normal_mode"
+C-f = "move_char_right"
+C-b = "move_char_left"
+
+[keys.normal.space]
+q = ":buffer-close"
+
