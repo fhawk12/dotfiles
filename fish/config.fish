@@ -2,7 +2,31 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-zoxide init fish | source
+if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" -eq 1 ]
+    # exec Hyprland
+    exec startx
+end
 
+zoxide init fish | source
+starship init fish | source
+
+# go proxy
+set -gx GOPROXY "https://goproxy.cn"
+set -gx GO111MODULE on
+
+set -gx EDITOR helix
+
+#pacman
+alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages
+
+# Colorize grep output (good for log files)
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+# apps
 alias ra=yazi
 alias lg=lazygit
+
+# misc
+alias pro="export https_proxy=http://127.0.0.1:7890;export http_proxy=http://127.0.0.1:7890;export all_proxy=socks5://127.0.0.1:7890"

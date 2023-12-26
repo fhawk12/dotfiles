@@ -3,6 +3,8 @@ theme="rose_pine"
 [editor]
 cursorline = true
 line-number = "relative"
+true-color = true
+color-modes = true
 
 [editor.cursor-shape]
 insert = "bar"
@@ -10,7 +12,7 @@ normal = "block"
 select = "underline"
 
 [editor.statusline]
-left = ["mode", "spinner", "diagnostics"]
+left = ["mode", "spinner", "diagnostics", "file-modification-indicator"]
 center = ["file-name"]
 right = ["selections", "position", "file-encoding", "file-line-ending", "file-type"]
 separator = "│"
