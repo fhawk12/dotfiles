@@ -14,7 +14,7 @@ starship init fish | source
 set -gx GOPROXY "https://goproxy.cn"
 set -gx GO111MODULE on
 
-set -gx EDITOR helix
+set -gx EDITOR nvim
 
 #pacman
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages
@@ -29,4 +29,5 @@ alias ra=yazi
 alias lg=lazygit
 
 # misc
+alias n=neofetch
 alias pro="export https_proxy=http://127.0.0.1:7890;export http_proxy=http://127.0.0.1:7890;export all_proxy=socks5://127.0.0.1:7890"
