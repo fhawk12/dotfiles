@@ -30,4 +30,5 @@ alias lg=lazygit
 
 # misc
 alias n=neofetch
+alias keymap="xmodmap ~/.Xmodmap"
 alias pro="export https_proxy=http://127.0.0.1:7890;export http_proxy=http://127.0.0.1:7890;export all_proxy=socks5://127.0.0.1:7890"
