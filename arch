@@ -1,0 +1,120 @@
+#!/usr/bin/env bash
+
+# sudo pacman -S git base-devel
+#
+# echo -e "\n[archlinuxcn]\nServer = https://mirrors.ustc.edu.cn/archlinuxcn/\$arch" | sudo tee -a /etc/pacman.conf
+#
+# sudo pacman -Syu
+# sudo pacman -S archlinuxcn-keyring
+#
+# dotfiles_dir="$HOME/.dotfiles"
+# fonts_dir="$dotfiles_dir/fonts"
+
+# echo "config sysmtem"
+# sudo pacman -S zsh
+# chsh -s $(which zsh)
+#
+# if [ ! -d "$HOME/.config" ]; then
+#   rm -rf "$HOME/.config"
+# fi
+#
+# if [ ! -f "$HOME/.bashrc" ]; then
+#   rm -rf "$HOME/.bashrc"
+#   rm -rf "$HOME/.bash_profile"
+#   rm -rf "$HOME/.bash_history"
+# fi
+
+echo "copy font..."
+# Set source and target directories
+fonts_dir=$( cd "$( dirname "$0" )" && pwd )
+find_command="find \"$fonts_dir\" \( -name '*.[o,t]tf' -or -name '*.pcf.gz' \) -type f -print0"
+mkdir $HOME/.local/share/fonts
+# Copy all fonts to user fonts directory
+echo "Copying fonts..."
+eval $find_command | xargs -0 -I % cp "%"  $HOME/.local/share/fonts
+
+echo "Download and install symbol only nerdfont"
+repo_url="https://api.github.com/repos/ryanoasis/nerd-fonts/releases/latest"
+download_url="$(curl -s "$repo_url" | grep "browser_download_url.*NerdFontsSymbolsOnly.zip" | cut -d '"' -f 4)"
+latest_version="$(echo $download_url | awk -F'/' '{print $NF}' | sed 's/NerdFontsSymbolsOnly.zip//')"
+tmp_dir="$(mktemp -d)"
+font_zip="$tmp_dir/NerdFontsSymbolsOnly.zip"
+echo "Donwloading Nerd Fonts v$latest_version..."
+curl -L -o "$font_zip" "$download_url"
+echo "unzip symbol only nerd fonts..."
+unzip -qq "$font_zip" -d "$tmp_dir"
+
+echo "Install symbol only nerd fonts..."
+find "$tmp_dir" -name '*.ttf' -exec cp {} ~/.local/share/fonts/ \;
+
+# refresh cache
+fc-cache -f -v
+# clean
+rm -rf "$tmp_dir"
+echo "Nerd Fonts v$latest_version install successed！"
+echo "font install done"
+
+# echo "link config file"
+# shopt -s dotglob
+# for file in "$dotfiles_dir/link"/*; do
+#   if [ -f "$file" ]; then
+#     filename=$(basename "$file")
+#     ln -s "$file" "$HOME/$filename"
+#     echo "Created symlink: $HOME/$filename -> $file"
+#   fi
+# done
+# shopt -u dotglob
+# echo "link done"
+#
+# echo "link config file"
+# config_dir="$HOME/.config"
+# for folder in "$dotfiles_dir/config"/*; do
+#   if [ -d "$folder" ]; then
+#     folder_name=$(basename "$folder")
+#     target_folder="$config_dir/$folder_name"
+#
+#     if [ -d "$target_folder" ]; then
+#       rm -rf "$target_folder"
+#       echo "remove exist $target_folder"
+#     fi
+#
+#     ln -s "$folder" "$target_folder"
+#     echo "Created system link $folder to $target_folder"
+#   fi
+# done
+
+git config --global user.name "fhawk"
+git config --global user.email "2369187058@qq.com"
+git config --global core.editor "nvim"
+# git config --global credential.helper store
+# git config --global core.excludesFile $HOME/.gitignore
+
+# echo "download neovim config"
+# git clone https://github.com/fhawk12/nvim "$HOME"/.config/nvim
+# echo "done"
+
+# echo "running update aur and install package"
+# yay -Syu
+# yay -S - < "$dotfiles_dir"/pkglist.txt --noconfirm
+#
+# rustup default stable
+#
+# git clone https://github.com/tmux-plugins/tpm ~/.local/share/tmux
+#
+# echo "install tsserver"
+# sudo npm i -g typescript typescript-language-server bash-language-server
+
+# Define the environment variables
+# ENV_VARS=(
+#   'QT_IM_MODULE=fcitx'
+#   'XMODIFIERS=@im=fcitx'
+#   'SDL_IM_MODULE=fcitx'
+#   'GLFW_IM_MODULE=fcitx'
+# )
+
+# Loop through the environment variables and add them to /etc/environment
+# for var in "${ENV_VARS[@]}"; do
+#   echo "$var" | sudo tee -a /etc/environment
+# done
+
+# echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope
