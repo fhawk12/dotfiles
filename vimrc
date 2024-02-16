@@ -3,9 +3,6 @@ let mapleader = " "
 call plug#begin()
 
 Plug 'preservim/nerdtree' 
-Plug 'nanotech/jellybeans.vim'
-Plug 'altercation/solarized'
-Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-commentary'
 Plug 'jiangmiao/auto-pairs'
 Plug 'rose-pine/vim'
@@ -14,7 +11,7 @@ Plug 'airblade/vim-gitgutter' " todo)) set keymap
 call plug#end()
 
 set background=dark
-colorscheme jellybeans
+colorscheme rosepine
 
 set number
 set relativenumber
