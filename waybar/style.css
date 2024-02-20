@@ -1,12 +1,12 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: Source Code Pro,Roboto, Helvetica, Arial, sans-serif;
+    font-family: Hack Nerd Font, Source Code Pro,Roboto, Helvetica, Arial, sans-serif, Symbols Nerd Font;
     font-size: 14px;
     min-height: 0;
 }
 
-@define-color bg rgb (22, 19, 32);
+@define-color bg #232136; /* rose-pine-moon */
 
 window#waybar {
     background: transparent;

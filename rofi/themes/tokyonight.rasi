@@ -8,7 +8,7 @@
  */
 
 configuration {
-  font: "Cascadia Code 10";
+  font: "ComicCode 18";
 
   drun {
     display-name: "";
@@ -68,7 +68,7 @@ prompt {
 }
 
 listview {
-  lines: 8;
+  lines: 10;
 }
 
 element {

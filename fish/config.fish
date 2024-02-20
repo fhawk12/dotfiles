@@ -3,12 +3,14 @@ if status is-interactive
 end
 
 if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" -eq 1 ]
-    # exec Hyprland
-    exec startx
+    exec Hyprland
+    # exec startx
 end
 
 zoxide init fish | source
 starship init fish | source
+
+fish_config theme choose "Rosé Pine Moon"
 
 # go proxy
 set -gx GOPROXY "https://goproxy.cn"
