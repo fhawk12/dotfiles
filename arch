@@ -83,7 +83,7 @@ echo "font install done"
 #   fi
 # done
 
-git config --global user.name "fhawk"
+git config --global user.name "fhawk12"
 git config --global user.email "2369187058@qq.com"
 git config --global core.editor "nvim"
 # git config --global credential.helper store
