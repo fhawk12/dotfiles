@@ -1,7 +1,7 @@
-theme="rose_pine"
+theme="rose_pine_moon"
 
 [editor]
-cursorline = true
+cursorline = false
 line-number = "relative"
 true-color = true
 color-modes = true
