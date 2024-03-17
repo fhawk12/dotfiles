@@ -28,10 +28,14 @@ nnoremap <leader>wd <C-w>c
 nnoremap <leader>q :bd<cr>
 nnoremap J 5j
 nnoremap K 5k
-nnoremap L :bp<cr>
-nnoremap H :bn<cr>
 nnoremap <leader>q :bd<cr>
 
+" Tab movement
+nnoremap L :action NextTab<CR>
+nnoremap H :action PreviousTab<CR>
+nnoremap <leader>ff :action GotoFile<cr>
+
+" insert mode
 inoremap <C-f> <right>
 inoremap <C-b> <left>
 
@@ -46,11 +50,15 @@ nnoremap <C-l> <C-W>l
 vnoremap gl $
 vnoremap gh 0
 
-" action
+" Format the document
 nnoremap <leader>fm :action ReformatCode<cr>
-
-" Tree
+" Show code action
+nnoremap ca :action ShowIntentionActions<cr>
+" Go to super method
+nnoremap gu :action GotoSuperMethod<CR>
+" Focus on the file tree
 nnoremap <leader>e :NERDTreeFocus<CR>
-
+" Rename
 nnoremap <leader>rn :action RenameElement<CR>
+" Jump to the next error
 nnoremap ]d :action GotoNextError<CR>

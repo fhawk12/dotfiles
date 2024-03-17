@@ -10,8 +10,6 @@ end
 zoxide init fish | source
 starship init fish | source
 
-fish_config theme choose "Rosé Pine Moon"
-
 # go proxy
 set -gx GOPROXY "https://goproxy.cn"
 set -gx GO111MODULE on
