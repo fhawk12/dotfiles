@@ -50,6 +50,8 @@ nnoremap <C-l> <C-W>l
 vnoremap gl $
 vnoremap gh 0
 
+nnoremap <leader>k :action QuickJavaDoc<cr>
+
 " Format the document
 nnoremap <leader>fm :action ReformatCode<cr>
 " Show code action
