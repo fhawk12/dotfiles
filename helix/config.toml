@@ -1,4 +1,5 @@
-theme="rose_pine_moon"
+# theme="rose_pine_moon"
+theme = "gruvbox_material_dark_soft"
 
 [editor]
 cursorline = false
