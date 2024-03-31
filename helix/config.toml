@@ -1,5 +1,5 @@
 # theme="rose_pine_moon"
-theme = "gruvbox_material_dark_soft"
+theme = "gruvbox_material_dark_medium"
 
 [editor]
 cursorline = false
@@ -33,6 +33,6 @@ C-s = ":w"
 C-f = "move_char_right"
 C-b = "move_char_left"
 
-[keys.normal.space]
-q = ":buffer-close"
+# [keys.normal.space]
+# q = ":buffer-close"
 
