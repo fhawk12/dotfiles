@@ -3,8 +3,8 @@ if status is-interactive
 end
 
 if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" -eq 1 ]
-    exec Hyprland
-    # exec startx
+    # exec Hyprland
+    exec startx
 end
 
 zoxide init fish | source
@@ -31,7 +31,7 @@ alias lg=lazygit
 # misc
 alias n=neofetch
 alias keymap="xmodmap ~/.Xmodmap"
-alias pro="export https_proxy=http://127.0.0.1:7890;export http_proxy=http://127.0.0.1:7890;export all_proxy=socks5://127.0.0.1:7890"
+alias pro="export https_proxy=http://127.0.0.1:7899;export http_proxy=http://127.0.0.1:7899;export all_proxy=socks5://127.0.0.1:7898"
 alias pyenv="source env/bin/activate.fish"
 alias pyquit="deactivate"
 alias py=python

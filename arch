@@ -1,48 +1,48 @@
 #!/usr/bin/env bash
 
-# sudo pacman -S git base-devel
-#
-# echo -e "\n[archlinuxcn]\nServer = https://mirrors.ustc.edu.cn/archlinuxcn/\$arch" | sudo tee -a /etc/pacman.conf
-#
-# sudo pacman -Syu
-# sudo pacman -S archlinuxcn-keyring
-#
-# dotfiles_dir="$HOME/.dotfiles"
-# fonts_dir="$dotfiles_dir/fonts"
+sudo pacman -S git base-devel
 
-# echo "config sysmtem"
-# sudo pacman -S zsh
-# chsh -s $(which zsh)
+echo -e "\n[archlinuxcn]\nServer = https://mirrors.ustc.edu.cn/archlinuxcn/\$arch" | sudo tee -a /etc/pacman.conf
+
+sudo pacman -Syu
+sudo pacman -S archlinuxcn-keyring
+
+dotfiles_dir="$HOME/.dotfiles"
+fonts_dir="$dotfiles_dir/fonts"
+
+echo "config sysmtem"
+sudo pacman -S fish
+chsh -s $(which fish)
 #
 # if [ ! -d "$HOME/.config" ]; then
 #   rm -rf "$HOME/.config"
 # fi
-#
-# if [ ! -f "$HOME/.bashrc" ]; then
-#   rm -rf "$HOME/.bashrc"
-#   rm -rf "$HOME/.bash_profile"
-#   rm -rf "$HOME/.bash_history"
-# fi
+
+if [ ! -f "$HOME/.bashrc" ]; then
+	rm -rf "$HOME/.bashrc"
+	rm -rf "$HOME/.bash_profile"
+	rm -rf "$HOME/.bash_history"
+fi
 
 echo "copy font..."
 # Set source and target directories
-fonts_dir=$( cd "$( dirname "$0" )" && pwd )
+fonts_dir=$(cd "$(dirname "$0")" && pwd)
 find_command="find \"$fonts_dir\" \( -name '*.[o,t]tf' -or -name '*.pcf.gz' \) -type f -print0"
 mkdir $HOME/.local/share/fonts
 # Copy all fonts to user fonts directory
 echo "Copying fonts..."
-eval $find_command | xargs -0 -I % cp "%"  $HOME/.local/share/fonts
+eval $find_command | xargs -0 -I % cp "%" $HOME/.local/share/fonts
 
-echo "Download and install symbol only nerdfont"
-repo_url="https://api.github.com/repos/ryanoasis/nerd-fonts/releases/latest"
-download_url="$(curl -s "$repo_url" | grep "browser_download_url.*NerdFontsSymbolsOnly.zip" | cut -d '"' -f 4)"
-latest_version="$(echo $download_url | awk -F'/' '{print $NF}' | sed 's/NerdFontsSymbolsOnly.zip//')"
-tmp_dir="$(mktemp -d)"
-font_zip="$tmp_dir/NerdFontsSymbolsOnly.zip"
-echo "Donwloading Nerd Fonts v$latest_version..."
-curl -L -o "$font_zip" "$download_url"
-echo "unzip symbol only nerd fonts..."
-unzip -qq "$font_zip" -d "$tmp_dir"
+# echo "Download and install symbol only nerdfont"
+# repo_url="https://api.github.com/repos/ryanoasis/nerd-fonts/releases/latest"
+# download_url="$(curl -s "$repo_url" | grep "browser_download_url.*NerdFontsSymbolsOnly.zip" | cut -d '"' -f 4)"
+# latest_version="$(echo $download_url | awk -F'/' '{print $NF}' | sed 's/NerdFontsSymbolsOnly.zip//')"
+# tmp_dir="$(mktemp -d)"
+# font_zip="$tmp_dir/NerdFontsSymbolsOnly.zip"
+# echo "Donwloading Nerd Fonts v$latest_version..."
+# curl -L -o "$font_zip" "$download_url"
+# echo "unzip symbol only nerd fonts..."
+# unzip -qq "$font_zip" -d "$tmp_dir"
 
 echo "Install symbol only nerd fonts..."
 find "$tmp_dir" -name '*.ttf' -exec cp {} ~/.local/share/fonts/ \;
@@ -89,14 +89,14 @@ git config --global core.editor "nvim"
 # git config --global credential.helper store
 # git config --global core.excludesFile $HOME/.gitignore
 
-# echo "download neovim config"
-# git clone https://github.com/fhawk12/nvim "$HOME"/.config/nvim
-# echo "done"
+echo "download neovim config"
+git clone https://github.com/fhawk12/nvim "$HOME"/.config/nvim
+echo "done"
 
-# echo "running update aur and install package"
-# yay -Syu
-# yay -S - < "$dotfiles_dir"/pkglist.txt --noconfirm
-#
+echo "running update aur and install package"
+paru
+paru -S - --noconfirm <"$dotfiles_dir"/pkglist.txt
+
 # rustup default stable
 #
 # git clone https://github.com/tmux-plugins/tpm ~/.local/share/tmux
@@ -104,17 +104,19 @@ git config --global core.editor "nvim"
 # echo "install tsserver"
 # sudo npm i -g typescript typescript-language-server bash-language-server
 
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 # Define the environment variables
-# ENV_VARS=(
-#   'QT_IM_MODULE=fcitx'
-#   'XMODIFIERS=@im=fcitx'
-#   'SDL_IM_MODULE=fcitx'
-#   'GLFW_IM_MODULE=fcitx'
-# )
+ENV_VARS=(
+	'QT_IM_MODULE=fcitx'
+	'XMODIFIERS=@im=fcitx'
+	'SDL_IM_MODULE=fcitx'
+	'GLFW_IM_MODULE=fcitx'
+)
 
 # Loop through the environment variables and add them to /etc/environment
-# for var in "${ENV_VARS[@]}"; do
-#   echo "$var" | sudo tee -a /etc/environment
-# done
+for var in "${ENV_VARS[@]}"; do
+	echo "$var" | sudo tee -a /etc/environment
+done
 
 # echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope
