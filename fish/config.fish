@@ -10,6 +10,9 @@ end
 zoxide init fish | source
 starship init fish | source
 
+# man
+set -gx MANPAGER "nvim +Man!"
+
 # go proxy
 set -gx GOPROXY "https://goproxy.cn"
 set -gx GO111MODULE on
