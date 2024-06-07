@@ -12,7 +12,7 @@ set keep-english-in-normal
 
 " Plugins
 Plug 'preservim/nerdtree'
-Plug 'tpope/vim-surround'ctivateTerminalToolWindow
+Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'machakann/vim-highlightedyank'
 
@@ -24,11 +24,13 @@ let maplocalleader=";"
 nnoremap <esc> :noh<cr>
 nnoremap gl $
 nnoremap gh 0
+nnoremap ge G
 nnoremap <leader>wd <C-w>c
 nnoremap <leader>q :bd<cr>
-nnoremap J 5j
-nnoremap K 5k
-nnoremap <leader>q :bd<cr>
+
+vnoremap gl $
+vnoremap gh 0
+vnoremap ge G
 
 " Tab movement
 nnoremap L :action NextTab<CR>
@@ -36,31 +38,31 @@ nnoremap H :action PreviousTab<CR>
 nnoremap <leader>ff :action GotoFile<cr>
 
 " insert mode
-inoremap <C-f> <right>
-inoremap <C-b> <left>
-
-vnoremap J 5j
-vnoremap K 5k
+inoremap <C-l> <right>
+inoremap <C-h> <left>
 
 nnoremap <C-j> <C-W>j
 nnoremap <C-k> <C-W>k
 nnoremap <C-h> <C-W>h
 nnoremap <C-l> <C-W>l
 
-vnoremap gl $
-vnoremap gh 0
-
-nnoremap <leader>k :action QuickJavaDoc<cr>
+" Show Java document
+nnoremap K :action QuickJavaDoc<cr>
 
 " Format the document
-nnoremap <leader>fm :action ReformatCode<cr>
+nnoremap <leader>cf :action ReformatCode<cr>
+
 " Show code action
 nnoremap ca :action ShowIntentionActions<cr>
+
 " Go to super method
 nnoremap gu :action GotoSuperMethod<CR>
+
 " Focus on the file tree
 nnoremap <leader>e :NERDTreeFocus<CR>
+
 " Rename
-nnoremap <leader>rn :action RenameElement<CR>
+nnoremap <leader>cr :action RenameElement<CR>
+
 " Jump to the next error
 nnoremap ]d :action GotoNextError<CR>
