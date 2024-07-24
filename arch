@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
-sudo pacman -S git base-devel
-
-echo -e "\n[archlinuxcn]\nServer = https://mirrors.ustc.edu.cn/archlinuxcn/\$arch" | sudo tee -a /etc/pacman.conf
+# echo -e "\n[archlinuxcn]\nServer = https://mirrors.ustc.edu.cn/archlinuxcn/\$arch" | sudo tee -a /etc/pacman.conf
 
 sudo pacman -Syu
 sudo pacman -S archlinuxcn-keyring
@@ -13,15 +11,15 @@ fonts_dir="$dotfiles_dir/fonts"
 echo "config sysmtem"
 sudo pacman -S fish
 chsh -s $(which fish)
-#
-# if [ ! -d "$HOME/.config" ]; then
-#   rm -rf "$HOME/.config"
-# fi
+
+if [ ! -d "$HOME/.config" ]; then
+  rm -rf "$HOME/.config"
+fi
 
 if [ ! -f "$HOME/.bashrc" ]; then
-	rm -rf "$HOME/.bashrc"
-	rm -rf "$HOME/.bash_profile"
-	rm -rf "$HOME/.bash_history"
+  rm -rf "$HOME/.bashrc"
+  rm -rf "$HOME/.bash_profile"
+  rm -rf "$HOME/.bash_history"
 fi
 
 echo "copy font..."
@@ -108,15 +106,15 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # Define the environment variables
 ENV_VARS=(
-	'QT_IM_MODULE=fcitx'
-	'XMODIFIERS=@im=fcitx'
-	'SDL_IM_MODULE=fcitx'
-	'GLFW_IM_MODULE=fcitx'
+  'QT_IM_MODULE=fcitx'
+  'XMODIFIERS=@im=fcitx'
+  'SDL_IM_MODULE=fcitx'
+  'GLFW_IM_MODULE=fcitx'
 )
 
 # Loop through the environment variables and add them to /etc/environment
 for var in "${ENV_VARS[@]}"; do
-	echo "$var" | sudo tee -a /etc/environment
+  echo "$var" | sudo tee -a /etc/environment
 done
 
 # echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope

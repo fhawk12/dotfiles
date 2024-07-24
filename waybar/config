@@ -12,8 +12,8 @@
     "battery",
     "keyboard-state",
     "tray",
-    "clock",
-    "custom/power",
+    "clock"
+    //"custom/power"
   ],
   // Modules configuration
   "hyprland/workspaces": {
@@ -27,7 +27,7 @@
   },
   "clock": {
     "format": "{:%Y-%m-%d %H:%M} ",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     // "format-alt": "{:%Y-%m-%d}"
   },
   "battery": {
@@ -56,13 +56,13 @@
     "format-icons": ["", "", ""],
     "interval": 3
   },
-  "network": {
-    "format-wifi": "  {essid}",
-    "format-ethernet": " {ipaddr}",
-    "format-linked": "{ifname} (No IP) ",
-    "format-disconnected": "󰤮 Disconnected",
-    "format-alt": "{ifname}: {ipaddr}/{cidr}"
-  },
+  // "network": {
+  //   "format-wifi": "  {essid}",
+  //   "format-ethernet": " {ipaddr}",
+  //   "format-linked": "{ifname} (No IP) ",
+  //   "format-disconnected": "󰤮 Disconnected",
+  //   "format-alt": "{ifname}: {ipaddr}/{cidr}"
+  // },
   "network": {
     "format": "{ifname}",
     "format-wifi": "{essid} ({signalStrength}%)  ",
@@ -72,12 +72,12 @@
     "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
     "tooltip-format-ethernet": "{ifname} ",
     "tooltip-format-disconnected": "Disconnected",
-    "max-length": 50,
+    "max-length": 50
   },
   "keyboard-state": {
     "numlock": true,
     "capslock": true,
-    "format": " {name} {icon}",
+    "format": " {name} {icon}"
   },
   "tray": {
        "icon-size": 20,
@@ -99,11 +99,11 @@
   },
   "hyprland/window": {  
     "format": "{}",
-    "format-stopped": "",
+    "format-stopped": ""
   },
   "custom/launcher":{
-    "format": " ",
+    "format": " "
     // "on-click": "wofi --show drun -I -a",
     // "on-click-right": "killall wofi"
-  },
+  }
 }

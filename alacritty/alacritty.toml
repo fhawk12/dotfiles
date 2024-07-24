@@ -1,58 +1,45 @@
-[font]
-size = 18
-glyph_offset = { x = 0, y = 0 }
-offset = { x = 0, y = 0 }
-
-[font.normal]
-family = "Comic Code"
-style = "Regular"
-
-[font.bold]
-family = "Comic Code"
-style = "Bold"
-
-[font.bold_italic]
-family = "Comic Code"
-style = "Bold Italic"
-
-[font.italic]
-family = "Comic Code"
-style = "Italic"
+live_config_reload = true
 
 [window]
-dynamic_padding = true
-padding = {x = 2, y = 0}
-decorations = "None"
+opacity = 1
+option_as_alt = "both"
+
+[font]
+size = 16
+normal = { family = "Operator Mono Lig" }
+italic = { family = "Operator Mono Lig" }
+bold = { family = "Operator Mono Lig" }
+bold_italic = { family = "Operator Mono Lig" }
 
 [mouse]
 hide_when_typing = true
 
-[cursor]
-style = { shape ="Beam", blinking = "Off" }
-vi_mode_style = { shape = "Block", blinking = "Off" }
+# Colors (Solarized Osaka)
+# Source https://github.com/craftzdog/solarized-osaka.nvim
 
-[keyboard]
-bindings = [
-  { key = "Enter", mods = "Control|Shift", action = "CreateNewWindow" },
-  { key = "q", mode = "Vi", action = "ToggleViMode" },
-]
-
+# Default colors
 [colors.primary]
-background ="#141821"
-foreground ="#b0b0b0"
+background = '#001a1d'
+foreground = '#839496'
 
-[colors]
-cursor = { cursor = '#a7c4bc' }
-
+# Normal colors
 [colors.normal]
-black  = "#555555"
-red  = "#ff5f59"
-green = "#9eb336"
-yellow = "#cc853d"
-blue = "#5c95e6"
-cyan = "#31cbd6"
-magenta = "#9884c4"
-white = "#b0b0b0"
+black   = '#073642'
+red     = '#dc322f'
+green   = '#859900'
+yellow  = '#b58900'
+blue    = '#268bd2'
+magenta = '#d33682'
+cyan    = '#2aa198'
+white   = '#eee8d5'
 
+# Bright colors
 [colors.bright]
-yellow = "#ccad52"
+black   = '#4c4c4c'
+red     = '#cb4b16'
+green   = '#586e75'
+yellow  = '#657b83'
+blue    = '#839496'
+magenta = '#6c71c4'
+cyan    = '#93a1a1'
+white   = '#fdf6e3'
