@@ -3,8 +3,8 @@ if status is-interactive
 end
 
 if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" -eq 1 ]
-    exec Hyprland
-    # exec startx
+    # exec Hyprland
+    exec startx
 end
 
 zoxide init fish | source
@@ -16,6 +16,12 @@ set -gx MANPAGER "nvim +Man!"
 # go proxy
 set -gx GOPROXY "https://goproxy.cn"
 set -gx GO111MODULE on
+
+# Term
+set -gx TERM st-256color
+
+# DWM
+set -gx DWM ~/Coding/projects/suckless/dwm
 
 set -gx EDITOR nvim
 
@@ -34,9 +40,22 @@ alias lg=lazygit
 # misc
 alias n=neofetch
 alias keymap="xmodmap ~/.Xmodmap"
-alias pro="export https_proxy=http://127.0.0.1:7897;export http_proxy=http://127.0.0.1:7897;export all_proxy=socks5://127.0.0.1:7898"
+alias pro="export https_proxy=http://127.0.0.1:7899;export http_proxy=http://127.0.0.1:7899"
 alias pyenv="source env/bin/activate.fish"
 alias pyquit="deactivate"
 alias py=python
 alias hx=helix
 alias swaylock="swaylock --color '#000000'"
+
+function nvim
+  if test (count $argv) -eq 0
+    set selected_file (fzf --prompt="Select a file: " --preview="bat --style=numbers --color=always --line-range :500 {}")
+    if test -n "$selected_file"
+      command nvim "$selected_file"
+    else
+      echo "No file selected."
+    end
+  else
+    command nvim $argv
+  end
+end

@@ -5,7 +5,7 @@ opacity = 1
 option_as_alt = "both"
 
 [font]
-size = 16
+size = 17
 normal = { family = "Operator Mono Lig" }
 italic = { family = "Operator Mono Lig" }
 bold = { family = "Operator Mono Lig" }
@@ -14,32 +14,26 @@ bold_italic = { family = "Operator Mono Lig" }
 [mouse]
 hide_when_typing = true
 
-# Colors (Solarized Osaka)
-# Source https://github.com/craftzdog/solarized-osaka.nvim
-
-# Default colors
 [colors.primary]
-background = '#001a1d'
-foreground = '#839496'
+background = '#24283b'
+foreground = '#a9b1d6'
 
-# Normal colors
 [colors.normal]
-black   = '#073642'
-red     = '#dc322f'
-green   = '#859900'
-yellow  = '#b58900'
-blue    = '#268bd2'
-magenta = '#d33682'
-cyan    = '#2aa198'
-white   = '#eee8d5'
+black = '#32344a'
+red = '#f7768e'
+green = '#9ece6a'
+yellow = '#e0af68'
+blue = '#7aa2f7'
+magenta = '#ad8ee6'
+cyan = '#449dab'
+white = '#9699a8'
 
-# Bright colors
 [colors.bright]
-black   = '#4c4c4c'
-red     = '#cb4b16'
-green   = '#586e75'
-yellow  = '#657b83'
-blue    = '#839496'
-magenta = '#6c71c4'
-cyan    = '#93a1a1'
-white   = '#fdf6e3'
+black = '#444b6a'
+red = '#ff7a93'
+green = '#b9f27c'
+yellow = '#ff9e64'
+blue = '#7da6ff'
+magenta = '#bb9af7'
+cyan = '#0db9d7'
+white = '#acb0d0'
