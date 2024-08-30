@@ -7,6 +7,15 @@ if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" -eq 1 ]
     exec startx
 end
 
+# haskell
+set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin /home/fhawk/.ghcup/bin $PATH # ghcup-env
+
+# rustup shell setup
+if not contains "$HOME/.cargo/bin" $PATH
+    # Prepending path in case a system-installed rustc needs to be overridden
+    set -x PATH "$HOME/.cargo/bin" $PATH
+end
+
 zoxide init fish | source
 starship init fish | source
 
@@ -33,11 +42,8 @@ alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
-# apps
-alias ra=yazi
+alias y=yazi
 alias lg=lazygit
-
-# misc
 alias n=neofetch
 alias keymap="xmodmap ~/.Xmodmap"
 alias pro="export https_proxy=http://127.0.0.1:7899;export http_proxy=http://127.0.0.1:7899"
@@ -52,8 +58,6 @@ function nvim
     set selected_file (fzf --prompt="Select a file: " --preview="bat --style=numbers --color=always --line-range :500 {}")
     if test -n "$selected_file"
       command nvim "$selected_file"
-    else
-      echo "No file selected."
     end
   else
     command nvim $argv
