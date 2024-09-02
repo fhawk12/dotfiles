@@ -12,8 +12,8 @@ elif [ "$kind" = vnd.openxmlformats-officedocument.spreadsheetml.sheet ] || \
 	[ "$kind" = vnd.ms-excel ]; then
 	in2csv "$1" | xsv table | bat -ltsv --color=always
 elif [ "$category" = text ]; then
-	bat --color=always "$1"
+	bat --color=always -p "$1"
 else
-	lesspipe.sh "$1" | bat --color=always
+	lesspipe.sh "$1" | bat -p --color=always
 fi
 # lesspipe.sh don't use eza, bat and chafa, it use ls and exiftool. so we create a lessfilter.
