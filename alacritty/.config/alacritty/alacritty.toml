@@ -1,11 +1,11 @@
 live_config_reload = true
 
 [window]
-opacity = 0.9
+opacity = 1
 option_as_alt = "both"
 
 [font]
-size = 10
+size = 14
 normal = { family = "RobotoMono Nerd Font" }
 
 [mouse]
