@@ -22,44 +22,34 @@ starship init fish | source
 # man
 set -gx MANPAGER "nvim +Man!"
 
-# go proxy
+# GO Proxy
 set -gx GOPROXY "https://goproxy.cn"
 set -gx GO111MODULE on
+set -gx PATH $PATH /usr/local/go/bin
+set -gx PATH $PATH /home/fhawk/go/bin
 
-# Term
 set -gx TERM st-256color
-
-# DWM
-set -gx DWM ~/Coding/projects/suckless/dwm
-
 set -gx EDITOR nvim
 
-#pacman
+# Pacman
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages
 
-# Colorize grep output (good for log files)
+alias la='ll -a'
+alias ls='eza --group-directories-first --icons'
+
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
-alias y=yazi
-alias lg=lazygit
-alias n=neofetch
-alias keymap="xmodmap ~/.Xmodmap"
 alias pro="export https_proxy=http://127.0.0.1:7899;export http_proxy=http://127.0.0.1:7899"
-alias pyenv="source env/bin/activate.fish"
-alias pyquit="deactivate"
-alias py=python
-alias hx=helix
-alias swaylock="swaylock --color '#000000'"
 
-function nvim
-  if test (count $argv) -eq 0
-    set selected_file (fzf --prompt="Select a file: " --preview="bat --style=numbers --color=always --line-range :500 {}")
-    if test -n "$selected_file"
-      command nvim "$selected_file"
-    end
-  else
-    command nvim $argv
-  end
-end
+#function nvim
+#  if test (count $argv) -eq 0
+#    set selected_file (fzf --prompt="Select a file: " --preview="bat --style=numbers --color=always --line-range :500 {}")
+#    if test -n "$selected_file"
+#      command nvim "$selected_file"
+#    end
+#  else
+#    command nvim $argv
+#  end
+#end
