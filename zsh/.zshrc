@@ -1,26 +1,16 @@
-# Install Zap plugin manager
-# https://www.zapzsh.com/
-# zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) --branch release-v1
-#
-# Created by Zap installer
-[ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
-
 if [ -z "$DISPLAY" ] && [ "$(tty)" = "/dev/tty1" ]; then
-    exec startx
-    # exec Hyprland
+  exec startx
+  # exec Hyprland
 fi
 
-# Plugins
-plug "zap-zsh/supercharge"
-plug "zap-zsh/exa"
-
-plug "zsh-users/zsh-autosuggestions"
-plug "zsh-users/zsh-syntax-highlighting"
-
-plug "wintermi/zsh-rust"
+# history
+HISTFILE=~/.cache/zsh/history
+HISTSIZE=1000
+SAVEHIST=1000
 
 # Load and initialise completion system
 autoload -Uz compinit
+zstyle ":completion:*" menu select
 compinit
 
 eval "$(zoxide init zsh)"
@@ -32,6 +22,8 @@ export QT_IM_MODULE=fcitx
 export SDL_IM_MODULE=fcitx
 export GLFW_IM_MODULE=ibus
 export XMODIFIERS=@im=fcitx
+
+export PATH=$PATH:/usr/local/bin
 
 # go
 export PATH=$PATH:/usr/local/go/bin
@@ -45,5 +37,19 @@ export MANPAGER="nvim +Man!"
 # alias
 alias g="git"
 alias gst="git status"
+alias gdf="git diff"
+
+alias ls='eza --group-directories-first --icons'
+alias ll="ls -l"
+alias la="ls -a"
+
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages
 
 alias pro="export https_proxy=http://127.0.0.1:7899;export http_proxy=http://127.0.0.1:7899"
+
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh

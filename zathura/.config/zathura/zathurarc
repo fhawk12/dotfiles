@@ -1,0 +1,10 @@
+ map n scroll down
+ map e scroll up
+ map i scroll right
+ map h scroll left
+
+ map <C-s> scroll half-down
+ map <C-f> scroll half-up
+
+ map k search forward
+ map K search backward

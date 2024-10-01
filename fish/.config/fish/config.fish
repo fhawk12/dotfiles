@@ -19,6 +19,8 @@ end
 zoxide init fish | source
 starship init fish | source
 
+set -gx PATH $PATH /home/fhawk/.local/bin
+
 # man
 set -gx MANPAGER "nvim +Man!"
 
@@ -37,19 +39,11 @@ alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages
 alias la='ll -a'
 alias ls='eza --group-directories-first --icons'
 
+alias g='git'
+alias gst='git status'
+
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
 alias pro="export https_proxy=http://127.0.0.1:7899;export http_proxy=http://127.0.0.1:7899"
-
-#function nvim
-#  if test (count $argv) -eq 0
-#    set selected_file (fzf --prompt="Select a file: " --preview="bat --style=numbers --color=always --line-range :500 {}")
-#    if test -n "$selected_file"
-#      command nvim "$selected_file"
-#    end
-#  else
-#    command nvim $argv
-#  end
-#end
