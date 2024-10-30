@@ -4,16 +4,9 @@ end
 
 if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" -eq 1 ]
     # exec Hyprland
-    exec startx
-end
-
-# haskell
-set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin /home/fhawk/.ghcup/bin $PATH # ghcup-env
-
-# rustup shell setup
-if not contains "$HOME/.cargo/bin" $PATH
-    # Prepending path in case a system-installed rustc needs to be overridden
-    set -x PATH "$HOME/.cargo/bin" $PATH
+    exec startx # dwm
+    # exec river
+    # exec niri
 end
 
 zoxide init fish | source
@@ -47,3 +40,7 @@ alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
 alias pro="export https_proxy=http://127.0.0.1:7899;export http_proxy=http://127.0.0.1:7899"
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH

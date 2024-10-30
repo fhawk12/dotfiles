@@ -1,0 +1,5 @@
+bind-key n next
+bind-key e prev
+
+bind-key k next-unread
+bind-key ; prev-unread
