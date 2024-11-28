@@ -39,7 +39,7 @@ alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
-alias pro="export https_proxy=http://127.0.0.1:7899;export http_proxy=http://127.0.0.1:7899"
+alias pro="export https_proxy=http://127.0.0.1:7890; export http_proxy=http://127.0.0.1:7890"
 
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
