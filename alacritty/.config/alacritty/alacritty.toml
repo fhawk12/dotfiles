@@ -1,0 +1,14 @@
+[window]
+opacity = 0.9
+
+[font]
+size = 14
+# normal = { family = "Cascadia Code" }
+normal = { family = "Operator Mono Book" }
+# normal = { family = "Hack Nerd Font Mono" }
+# normal = { family = "RobotoMono Nerd Font" }
+# normal = { family = "CaskaydiaCove Nerd Font Mono" }
+# normal = { family = "JetBrainsMono Nerd Font Mono" }
+
+[mouse]
+hide_when_typing = true

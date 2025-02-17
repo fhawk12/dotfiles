@@ -1,0 +1,125 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: Hack Nerd Font Mono, Source Code Pro,Roboto, Helvetica, Arial, sans-serif, Symbols Nerd Font;
+    font-size: 18px;
+    min-height: 0;
+}
+
+@define-color bg #232136; /* rose-pine-moon */
+
+window#waybar {
+    background: transparent;
+    color: white;
+}
+
+#window {
+  color: #c0caf5;
+	background-color: @bg;
+	margin: 5px;
+	margin-left: 5px;
+	border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#workspaces {
+	background-color: @bg;
+	margin: 5px;
+	margin-left: 5px;
+	border-radius: 5px;
+}
+#workspaces button {
+  padding: 5px 8px;
+  color: #c0caf5;
+}
+
+#workspaces button.active {
+    color: @bg;
+    background-color: #7aa2f7;
+    border-radius: 5px;
+    border-top: 5px solid #ABE9B3;
+    border-bottom: 5px solid #ABE9B3;
+}
+
+#workspaces button:hover {
+	background-color: #7dcfff;
+	color: @bg;
+	border-radius: 5px;
+}
+
+#keyboard-state,#tray, #cpu, #memory, #clock, #battery,#temperature, #pulseaudio, #network {
+	background-color: @bg;
+	padding: 5px 10px;
+	margin: 5px 0px;
+}
+
+#custom-power {
+	color: @bg;
+	background-color: #db4b4b;
+	border-radius: 5px;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	padding: 5px 10px;
+}
+
+#custom-launcher {
+  font-size: 20px;
+  color: #89DCEB;
+	background-color: @bg;
+	border-radius: 5px;
+	margin-left: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	padding-left: 10px;
+	padding-right: 5px;
+}
+
+#cpu {
+	border-radius: 5px 0px 0px 5px;
+	color: #7dcfff;
+}
+
+#keyboard-state {
+  color: #9ece6a;
+}
+
+#memory {
+  color: #9481b5;
+}
+
+#temperature {
+  color: #9ece6a;
+}
+
+#clock {
+    color: #b48ead;
+    border-radius: 0px 5px 5px 0px;
+    margin-right: 10px;
+}
+
+#battery {
+    color: #9ece6a;
+}
+
+#battery.charging {
+    color: #9ece6a;
+}
+
+#battery.warning:not(.charging) {
+    background-color: #f7768e;
+    color: @bg;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#network {
+	color: #f7768e;
+}
+
+#pulseaudio {
+	color: #e0af68;
+}
+

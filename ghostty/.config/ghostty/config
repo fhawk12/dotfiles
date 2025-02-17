@@ -1,0 +1,23 @@
+theme = rose-pine-moon
+background = 000000
+
+# font-family = "Operator Mono Lig Book"
+# font-family = "CaskaydiaCove Nerd Font Mono"
+# font-family = "FiraCode Nerd Font Mono"
+font-family = "JetBrainsMono Nerd Font Mono"
+# font-family = "Roboto Mono"
+font-size = 18
+
+cursor-style = block
+cursor-style-blink = true
+mouse-hide-while-typing = true
+
+background-opacity = 0.8
+background-blur-radius = 0
+
+window-decoration = false
+
+keybind = ctrl+shift+f=toggle_fullscreen
+
+shell-integration = fish
+confirm-close-surface = false
