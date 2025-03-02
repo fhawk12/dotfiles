@@ -3,8 +3,9 @@ opacity = 0.9
 
 [font]
 size = 14
-# normal = { family = "Cascadia Code" }
-normal = { family = "Operator Mono Book" }
+normal = { family = "Cascadia Code" }
+# normal = { family = "Operator Mono Book" }
+# normal = { family = "Comic Code" }
 # normal = { family = "Hack Nerd Font Mono" }
 # normal = { family = "RobotoMono Nerd Font" }
 # normal = { family = "CaskaydiaCove Nerd Font Mono" }
@@ -12,3 +13,8 @@ normal = { family = "Operator Mono Book" }
 
 [mouse]
 hide_when_typing = true
+
+[general]
+import = [
+    "~/.config/alacritty/themes/themes/gruvbox_material_medium_dark.toml"
+]

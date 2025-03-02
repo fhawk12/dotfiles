@@ -5,24 +5,25 @@
 keybinds clear-defaults=true {
     locked {
         bind "Ctrl space" { SwitchToMode "normal"; }
-        bind "Ctrl f" {
-            LaunchPlugin "monocle" {
-                floating true
-            };
-            SwitchToMode "locked";
-        }
-        bind "Ctrl t" {
-            LaunchPlugin "room" {
-                floating true
-                ignore_case true
-                quick_jump true
-            }
-        }
     }
     normal {
             bind "Enter" {
                 WriteChars "\u{000D}";
                 MessagePlugin "autolock" {};
+            }
+            bind "y" {
+                LaunchPlugin "room" {
+                    floating true
+                    ignore_case true
+                    quick_jump true
+                };
+                SwitchToMode "locked";
+            }
+            bind "f" {
+                LaunchPlugin "monocle" {
+                    floating true
+                };
+                SwitchToMode "locked";
             }
         }
     pane {
@@ -247,10 +248,8 @@ plugins {
     welcome-screen location="zellij:session-manager" {
         welcome_screen true
     }
-    monocle location="file:~/.config/zellij/plugins/monocle.wasm"
-    forgot location="file:~/.config/zellij/plugins/zellij_forgot.wasm"
     room location="file:~/.config/zellij/plugins/room.wasm"
-    harpoon location="file:~/.config/zellij/plugins/harpoon.wasm"
+    monocle location="file:~/.config/zellij/plugins/monocle.wasm"
 }
 
 // Plugins to load in the background when a new session starts
@@ -259,7 +258,6 @@ plugins {
 load_plugins {
     room
     monocle
-    // forgot // it has some bugs
 }
  
 // Use a simplified UI without special fonts (arrow glyphs)
@@ -272,7 +270,7 @@ load_plugins {
 // Choose the theme that is specified in the themes section.
 // Default: default
 // 
-theme "rose-pine-moon"
+theme "gruvbox-dark"
  
 // Choose the base input mode of zellij.
 // Default: normal
