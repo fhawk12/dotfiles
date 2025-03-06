@@ -1,0 +1,77 @@
+ls
+z dot
+ls
+cd
+cd dotfiles/
+ls
+git diff
+git status
+ls
+ls | where type == "dir" | table 
+echo $nu,env-path
+echo $nu.env-path
+cd
+cd .config
+ls
+cd nushell/
+ls
+echo $nu.env-path
+nvim env.nu
+z
+source ~/.zoxide.nu
+z
+echo $nu.config-path
+z nushell
+ls
+nvim config.nu
+k
+ls
+cd .
+cd ..
+ls
+exit
+nu
+exit
+ls
+cd .config
+ls
+cd ..
+ls
+$env.config.buffer_editor = "vi"
+ls
+nvim config.nu
+nvim env.nu
+ls
+config nu
+$env.config.buffer_editor = "nvim"
+config nu
+nvim env.nu
+nvim config.nu
+ls
+nvim config.nu
+config nu
+ls
+nvim config.nu
+help config nu
+nvim config.nu
+ls
+$env.NU_LIB_DIRS
+reboot
+sudo reboot
+config nu
+exit
+nu
+exit
+ls
+cd dotfiles/
+ls
+g st
+git status
+git diff
+git add .
+git commit
+git config
+git -h
+git help
+exit
+cd dotfiles/
