@@ -3,6 +3,3 @@ add_newline = true
 [character]
 success_symbol = '[](green)'
 error_symbol = '[](red)'
-
-[git_status]
-deleted = 'x'

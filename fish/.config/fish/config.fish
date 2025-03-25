@@ -35,6 +35,7 @@ set -gx EDITOR nvim
 # Pacman
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages
 
+alias lg='lazygit'
 alias g='git'
 alias gst='git status'
 
@@ -45,7 +46,4 @@ alias fgrep='fgrep --color=auto'
 alias pro="export https_proxy=http://127.0.0.1:7890; export http_proxy=http://127.0.0.1:7890"
 
 alias zel='zellij'
-
-# bun
-set --export BUN_INSTALL "$HOME/.bun"
-set --export PATH $BUN_INSTALL/bin $PATH
+alias set-colemak='setxkbmap us -variant colemak -option ctrl:nocaps'

@@ -18,3 +18,14 @@
 # them for future reference.
 
 zoxide init nushell | save -f ~/.zoxide.nu
+
+# Rust
+$env.PATH = ($env.PATH | append $"($env.HOME)/.cargo/bin")
+
+# Golang
+$env.PATH = ($env.PATH | append $"($env.HOME)/go/bin" | append "usr/local/go/bin")
+$env.GOPROXY = "https://goproxy.cn"
+$env.GGO111MODULE = "on"
+
+source "~/.cargo/env.nu"
+

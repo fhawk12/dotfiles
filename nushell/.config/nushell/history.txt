@@ -75,3 +75,1484 @@ git -h
 git help
 exit
 cd dotfiles/
+lazygit
+exit
+nvim temp.sql
+nvim .profile
+z dwm
+nvim config.h
+ls
+z
+nvim .xinitrc
+exit
+feh --bg-fill ~/wallpaper/41.png
+exit
+z dwm
+nvim config.h
+exit
+ls
+exit
+nvim main.c
+z nvim
+nvim main.c
+nvim Makefile
+nvim init.lua
+exit
+nvim main.c
+pro
+z fish
+nvim config.h
+config nu
+nvim
+pro
+curl www.google.com
+echo curl -I  www.google.com
+exit
+nu
+exit
+nvim
+exit
+nu
+exit
+nu
+exit
+pro
+nvim
+exit
+ls
+pro
+exit
+ls
+z aalg
+z alg
+nvim interview.c
+nvim lc.cpp
+exit
+ghostty 
+exit
+btop
+sudo pacman -S btop
+btop
+btop --utf-force 
+exit
+z dwm
+dwm
+dmenu 
+cd dotfiles/
+ls
+cd x
+ls
+ll
+ls -a
+cd ..
+ls
+dmenu_run 
+sudo pacman -S rofi
+paru
+pro
+paru
+exit
+paru
+sudo pacman -S rofi
+rofi
+rofi -show drun
+nvim config.h
+sudo make install clean
+exit
+exit
+sudo reboot
+ls
+nvim .profile
+ls
+source ~/.profile
+ls
+exit
+ls
+z fish
+nvim config.fish
+config nu
+colemak 
+exit
+nu
+exit
+fish
+exit
+config nu
+exit
+set-colemak 
+exit
+config nu
+exit
+set-colemak 
+exit
+z nvim
+nvim init.lua
+exit
+cd .config/lazygit/
+ls
+nvim config.yml
+exit
+cd dotfiles/
+git log
+git log -h
+git log --help
+git log --reverse
+exit
+z tmp
+ls
+cargo init
+exit
+pro
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source ~/.cargo/env.nu
+ls
+cinfig nu
+config nu
+ls
+cd .config/nushell/
+$HOME
+$env.HOME
+source "$HOME/.cargo/env.nu"
+source "$env.HOME/.cargo/env.nu"
+$env.HOME
+ls $HOME/.cargo<\n>
+ls $env.HOME/.cargo<\n>
+exit
+rustup show<\n>
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+pro
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+exit
+pro
+config nu
+exit
+pro
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source "$HOME/.cargo/env.nu"
+cargo init
+exit
+exit
+nvim env.nu
+exit
+z tmp
+ls
+cargo init
+rustup
+rustup update
+ls
+ls .cargo
+cd .cargo/bin/
+ls
+z fish
+nvim config.fihs
+nvim
+ls
+z
+nvim .profile
+nvim .xinitrc
+exit
+pro
+rustup update
+ls
+./rustup update
+config nu
+rustup update
+z tmp
+cargo init
+ls
+rm Cargo.toml src
+rm -rf Cargo.toml src
+ls
+mkdir rust-demo
+cd rust-demo/
+cargo init
+cargo run
+cargo run .
+nvim src
+cargo run .
+ls
+rm -rf Cargo.lock
+cargo run .
+ls
+cargo run .
+nvim Cargo.toml
+exit
+nu
+exit
+exit
+env
+$env
+exit
+cd dotfiles/
+exit
+ls
+cd dotfiles/
+ls
+s
+ls
+exit
+ls
+cd Downloads/
+ls
+exit
+ls
+neofetch 
+nvim
+ls
+config nu
+exit
+exit
+exit
+z nvim
+ls
+exit
+config nu
+exit
+cd dotfiles/
+exit
+$nu.data-dir
+mkdir ($nu.data-dir | path join "vendor/autoload")<\n>starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
+ls
+cd dotfiles/
+ls
+gst
+git status
+exit
+nu
+exit
+cd .config
+nvim starship.toml
+ls
+exit
+ls
+cd dotfiles/
+ls
+z nvim
+git status
+nvim
+exit
+ls
+nvim
+exit
+ls
+exit
+nvim main.c
+exit
+nvim todo-list.md
+exit
+exit
+zellij attach happy-coding
+exit
+ls
+z nvim
+nvim init.lua
+ls
+config nu
+exit
+z nvim
+g status
+ls
+config nu
+exit
+z nvim
+gst
+z
+config nu
+exit
+z picom
+cd .config/picom
+ls
+z
+z nvim
+xprop
+nvim picom.conf
+nvim init.lua
+ls
+z ala
+nvim alacritty.toml
+ls
+nvim alacritty.toml
+nvim
+nvim alacritty.toml
+z
+nvim
+z tmp
+ls
+pwd
+ls
+ls -a
+git log
+rm -rf .git .gitignore
+ls
+ls -a
+ls -la
+cd wallpaper/
+ls
+exit
+ls
+cd tmpl
+ls
+cd ..
+ls
+cd rust-demo/
+z c-shell
+nvim test.c
+exit
+cargo run
+nvim src
+ls
+rm -rf *
+ls
+cargo init
+cargo run
+cargo --help
+cargo build
+ps aux | grep cargo<\n>kill -9 <PID><\n>
+z ala
+nvim alacritty.toml
+ls
+nvim alacritty.toml
+exit
+rm -f ~/.cargo/.package-cache
+ls
+exit
+cargo run
+exit
+nvim src
+z
+ls
+nvim
+z ghostty
+ls
+nvim config
+ls
+z ghostty
+ghostty +list-themes
+exit
+ghostty
+exit
+ls
+exit
+ls
+exit
+z ala
+nvim config
+z dwm
+nvim config
+nvim config.h
+sudo make clean install
+z
+z dwm
+nvim config.h
+exit
+exit
+ls
+z lemon
+ls
+make live/all
+air 
+exit
+config nu
+make live/all
+exit
+nu
+sudo reboot
+neofetch
+ls
+z
+btop
+locale<\n>
+sudo nvim /etc/locale.gen
+sudo locale-gen 
+btop
+exit
+btop
+btop --utf-force
+z
+ls
+neofetch
+pro
+set-colemak 
+exit
+paru
+ls
+yazi
+ls
+yazi
+ls
+cd wallpaper/
+ls
+mv *.png wallpaper.png
+ls
+yazi
+z yazi
+nvim keymap.toml
+exit
+g add .
+g commit -m 'update'
+g push
+g push --set-upstream origin main
+z
+z nvim
+nvim init.lua
+z
+z c-shell
+ls
+rm test.c
+ls
+z dwm
+nvim config.h
+sudo make clean install
+exit
+pro
+set-colemak 
+exit
+paru wechat
+ls
+z rofi
+cd .config/rofi
+ls
+z
+exit
+z gh
+ls
+ghostty +list-themes
+exit
+ls
+nvim config
+ls
+nvim config
+ls
+z
+ls
+cd code
+ls
+cd todo-list/
+ls
+nvim src
+ghostty
+ls
+nvim
+z lemon
+ls
+nvim config
+z dwm
+nvim config
+nvim config.h
+sudo make clean install
+exit
+z gh
+ls
+exit
+ghostty +list-actions
+ghostty action
+nvim
+nvim config
+exit
+z rofi
+ls
+cd .config/rofi
+ls
+cd dotfiles/
+ls
+cd rofi
+exit
+nvim main.c
+sudo reboot
+ls
+neofetch
+ls
+exit
+z c-shell
+ls
+pro
+nvim
+ls
+nvim main.c
+z picom
+ls
+nvim picom.conf
+exit
+z gh
+nvim config
+z c-shell
+nvim main.c
+ls
+z nvim
+nvim init.lua
+ls
+z
+z c-shell
+yazi
+feh --bg-fill ~/wallpaper/22.png
+z gh
+nvim config
+z picom
+nvim picom.conf
+pro
+nvim
+exit
+ls
+cd code/kilo/
+ls
+yazi
+cd ../kilo-bak
+ls
+./kilo
+cd ..
+ls
+exit
+ls
+exit
+bd
+exit
+nvim main.c
+exit
+nvim
+exit
+nvim
+nvim mainc.c
+exit
+ls
+cd wallpaper/
+ls
+ls | lines | last 10
+ls | lines
+ls | last 10
+ls | fist 10
+ls | first 10
+exit
+nvim main.c
+nvim a
+ls
+nvim
+ls
+nvim b
+ls
+rm baa
+nvim
+ls
+pro
+paru
+pro
+paru
+exit
+yazi
+z dwm
+exit
+z dwm
+yazi
+exit
+nvim config.h
+sudo make clean install
+exit
+ls
+exit
+xprop
+z picom
+nvim picom.conf
+exit
+pro
+paru
+exit
+pro
+nvim
+exit
+exit
+pro
+paru
+helix
+exit
+ls
+exit
+ls
+exit
+ls
+yazi
+exit
+pro
+paru
+pro
+paru
+exit
+paru
+exit
+nvim notes/todo-list.md
+exit
+pro
+paru
+ls
+nvim
+exit
+nvim
+z nvim
+nvim init.lua
+nvim
+eit
+z rust
+ls
+z rust
+ls
+z nvim
+nvim init.lua
+pro
+nvim exercises/
+nvim
+nvim init.lua
+exit
+nvim main.c
+ls
+z nvim
+nvim init.lua
+exit
+pro
+paru
+z dwm
+nvim config.h
+exit
+go --version
+go
+go -v
+go -h
+go help
+z go
+ls
+cd gothstart/
+ls
+nvim go.mod
+exit
+z fish
+nvim config.h
+nvim config.fish
+config nu
+exit
+pro
+nvim
+nvim -v
+exit
+nvim init.lua
+z shell
+ls
+neofetch
+z fish
+nvim fish_variables
+z fish
+$env.GOPROXY
+exit
+$env.PATH
+exit
+nu
+exit
+$env.PATH
+exit
+nvim config.fish
+exit
+config nu
+nvim main.c
+ls
+prop
+pro
+paru
+ls
+config nu
+exit
+z rust
+ls
+z rust
+ls
+nvim
+ls
+cd exercises/
+ls
+rustlings 
+cd ..
+nvim 01_variables/
+exit
+ls
+pro
+nvim
+paru
+exit
+ls
+cd ..
+rm -rf c-shell
+ls
+cd go-project/
+ls
+cd lsp
+ls
+nvim main.go
+ls
+cd ..
+ls
+cd ..
+ls
+cd kilo
+ls
+nvim kilo.c
+nvim Makefile
+make
+./kilo
+./kilo && kilo
+./kilo && ./kilo
+make && ./kilo
+make | ./kilo
+make and ./kilo
+make ; ./kilo
+airsutn
+make ; ./kilo
+z dwm
+nvim config.h
+exit
+make ; ./kilo
+z nvim
+nvim
+exit
+pro
+nvim
+exit
+ls
+z tmp
+ls
+mkdir c-demo
+cd c-demo/
+ls
+nvim main.c
+nvim Makefile
+make
+nvim main.c
+make
+exit
+z c-tmp
+z c-templ
+z c-demo
+nvim main.c
+nvim
+ls
+z nvim
+nvim init.lua
+nvim
+nvim init.lua
+nvim
+ls
+nvim init.lua
+exit
+z c-demo
+ls
+make
+nvim main.c
+make
+nvim main.c
+exit
+exit
+exit
+zellij attach happy-coding
+make
+nvim Makefile
+z nvim
+nvim
+z nvim
+nvim init.lua
+exit
+nvim init.lua
+exit
+nvim kilo.c
+ls
+nvim main.c
+nvim
+exit
+z c-demo
+ls
+make
+exit
+make
+nvim main.c
+make
+ls
+make
+./kilo
+make
+./kilo
+z nvim
+nvim init.lua
+exit
+nvim kilo.c
+make
+ls
+echo test | ./kilo
+make
+./kilo
+make
+./kilo
+make
+./kilo
+make
+ls
+make
+make
+nvim
+make
+pro
+nvim
+exit
+paru
+setE
+set-colemak
+make
+./a.out
+make
+ls
+make
+pro
+paru
+ls
+config nu
+gl
+z nvim
+gl
+exit
+ls
+gst
+exit
+z nvim
+gst
+ls
+set-colemak 
+exit
+nu
+exit
+cd dotfiles/
+git log
+exit
+config nu
+exit
+s
+ls
+cd code/tmp
+ls
+z dwm
+z
+cd Downloads/
+ls
+cd database_system_concepts_answers/
+ls
+cd 03
+cd Ch03_Introduction_to_SQL/
+ls
+nvim temp.sql
+z nvim
+nvim
+nvim init.lua
+z nvim
+nvim init.lua
+exit
+nvim temp.sql
+z nvim
+nvim init.lua
+fish
+z nvim
+nvim init.lua
+exit
+nvim init.lua
+exit
+nvim notes/todo-list.md
+z
+make
+exti
+killall qq
+exit
+z gh
+ls
+exit
+z kilo
+ls
+nvim mian.c
+nvim main.c
+ls
+nvim kilo.c
+z nvim
+z kilo
+alacritty 
+exit
+make
+nvim
+nvim kilo.c
+nvim
+nvim kilo.c
+nvim
+z nvim
+nvim init.lua
+nvim
+exit
+make
+maek
+make
+nvim kilo.c
+make
+z kilo
+ls
+./kilo
+make
+exit
+z kilo
+make
+fish
+exit
+make
+./kilo
+exit
+st
+exit
+make
+nvim kilo.c
+exit
+pro
+paru
+nvim
+z
+pro
+nvim
+nvim 3.12.md
+paru
+z kilo
+ls
+nvim kilo.c
+ls
+sudo pacman -Rscn wechat.sh 
+sudo pacman -Rscn wechat
+sudo pacman -R wechat
+z fish
+sudo pacman -R $(pacman -Qtdq)
+sudo pacman -Rns $(pacman -Qtdq)
+sudo pacman -Rns < (pacman -Qtdq)
+sudo pacman -Rns | (pacman -Qtdq)
+fish
+set-colemak 
+ls
+sudo pacman -S zig
+exit
+z temp
+z tmp
+nvim main.c
+ls
+cd c-demo/
+ls
+mae
+make
+nvim main.c
+ls
+z
+pro
+nvim
+z
+z nvim
+nvim init.lua
+z
+paru
+ls
+neofetch
+ls
+cd coed
+cd code
+ls
+rm -rf kilo-bak
+ls
+cd kilo
+ls
+z c-demo
+make
+nvim main.c
+z
+z c-demo
+make
+z nvim
+nvim init.lua
+exit
+nvim main.c
+ls
+cd notes
+nvim todo-list.md
+pro
+ls
+paru
+ls
+gst
+z
+pro
+nvim
+paru
+z
+ls
+z nvim
+nvim
+nvim init.lua
+exit
+make
+ls
+./kilo Makefile
+ls
+make
+ls
+./kilo Makefile
+./kilo kilo
+ls
+./kilo kilo.c
+make
+./kilo kilo.c
+./kilo
+make
+./kilo kilo.c
+make
+./kilo kilo.c
+make
+./kilo kilo.c
+make
+./kilo kilo.c
+make
+./kilo kilo.c
+make
+./kilo kilo.c
+paru
+ls
+btop
+btop --utf-force
+ls
+top
+ls
+pro
+nvim
+paru
+ls
+pro
+paru
+ls
+z kilo
+nvim kilo.c
+exit
+st
+exit
+nvim kilo.c
+exit
+alacritty 
+ls
+z st
+ls
+z st
+z dwm
+cd ../st
+ls
+nvim config.h
+sudo make clean install
+nvim config.h
+sudo make clean install
+exit
+st
+ls
+yazi
+ls
+pro
+ls
+z kilo
+nvim kilo.c
+exit
+nvim kilo.c
+z dwm
+ls
+nvim config.h
+paru uberzug
+pro
+paru uberzug
+paru uberzugcpp
+pro
+paru
+paru ueberzug
+yazi
+exit
+ls
+z st
+z dwm
+ls
+yazi
+st
+sudo pacman -R ueberzugpp 
+sudo pacman -R ueberzu
+cinfig nu
+exit
+st
+exit
+ls
+z
+top
+ls
+cd code
+ls
+cd todo-list/
+ls
+yazi
+ls
+cd ..
+ls
+mvdir archive
+mkdir archive
+mv todo-list/ archive/
+ls
+cd go-project/
+ls
+mv ~/learn-lsp/ ../archive/
+ls
+cd lsp
+ls
+cd .
+cd ..
+rm lsp
+rm -rf lsp
+config nu
+help config nu
+config nu --doc | nu-highlight 
+exit
+config nu
+ls
+cd lemon-dict/
+ls
+:w
+config nu
+pro
+nvim
+pro
+paru
+sudo reboot
+ls
+config nu
+exit
+ls
+exit
+exit
+tmux
+exit
+ls
+exit
+ls
+->
+ls
+z kilo
+z k
+exit
+z kilo
+z tmp
+ls
+cd rust-demo/
+ls
+cd ..
+mkdir a
+cda 
+cd a
+cargo init
+rustup update
+exit
+cd .cargo
+ls
+nvim env.nu
+cd 
+ls
+cd .go
+cd go/bin
+ls
+exit
+config nu
+ls
+exit
+tmux
+exit
+alacritty 
+exit
+nu
+exit
+tmux
+exit
+tmux
+ls
+config nu
+pro
+paru
+sudo reboot
+ls
+exit
+tmux
+exit
+ghostty 
+mkdir ($nu.data-dir | path join "vendor/autoload")<\n>starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
+ls
+z kilo
+cd code
+ls
+z st
+z dwm
+cd ../st
+sudo make clean install
+exit
+tmux
+exit
+tmux
+exit
+$nu.data-dir
+ls
+sudo pacman -R starship
+exit
+tmux
+ls
+exit
+tmux
+rm .local/share/nushell/vendor/autoload/starship.nu
+ls
+exit
+ls
+nvim
+ls
+cd conde
+cd code
+ls
+cd rustlings/
+ls
+gst
+exit
+tmux
+z dwm
+ls
+cd ../st
+ls
+gst
+nvim TODO
+st -v
+cd ..
+git log --pretty=%h»¦«%aN»¦«%s»¦«%aD | lines | split column "»¦«" sha1 committer desc merged_at | histogram committer merger | sort-by merger | reverse
+git log --pretty=%h»¦«%aN»¦«%s»¦«%aD | lines | split column "»¦«" sha1 committer desc merged_at | first 10
+git log
+git log --pretty
+git log | lines
+git log --pretty=%h»¦«%aN»¦«%s»¦«%aD | lines | split column "»¦«" sha1 committer desc merged_at 
+exit
+z dwm
+gstat
+gst-stats-1.0 
+exit
+plugin add nu_plugin_gstat 
+cargo install --path .
+cd code
+ls
+pro
+git clone https://github.com/nushell/nushell.git
+cd nushell
+ls
+plugin list 
+plugin add nu_plugin_gstat 
+plugin add ./crates/nu_plugin_gstat 
+cd crates/
+ls
+cd nu_plugin_gstat/
+ls
+> cargo install --path .
+plugin add nu_plugin_gstat 
+cd ..
+plugin add nu_plugin_gstat 
+cargo install nu_plugin_gstat --locked
+exit
+nu
+exit
+nu
+exit
+cargo
+pro
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source "$HOME/.cargo/env.nu"
+source $HOME/.cargo/env.nu
+exit
+cargo
+source $env.HOME/.cargo/env.nu
+source "$env.HOME/.cargo/env.nu"
+exit
+ls
+cargo
+cd .cargo/
+ls
+nvim env.nu
+cargo
+exit
+nu
+exit
+nu
+exit
+nu
+exit
+config nu
+ls
+exit
+ls
+z nushel
+ls
+cargo install nu_plugin_gstat --locked
+cd crates/
+ls
+cargo install --path nu_plugin_gstat/
+pro
+cargo install --path nu_plugin_gstat/
+cd Downloads/
+ls
+cd test-zip/
+ls
+yazi
+ls
+fish
+exit
+ghostty 
+exit
+ls
+z dmw
+z dwm
+gstat
+plugin add nu_plugin_gstat 
+nu_plugin_gstat 
+nu_plugin_gstat -h
+nu_plugin_gstat --help
+z dwm
+ls
+nu_plugin_gstat
+dstat
+gstat
+plugin list
+plugin use gstat
+plugin use gstat
+plugin add gstat
+plugin add
+plugin add nu_plugin_gstat 
+plugin add gstat 
+ls
+cd ..
+plugin add nu_plugin_gstat 
+plugin add gstat 
+plugin list 
+plugin add $(which nu_plugin_nu_plugin_gstat>)
+nu_plugin_gstat 
+plugin add nu_plugin_gstat 
+where nu_plugin_gstat 
+where | nu_plugin_gstat
+where < nu_plugin_gstat
+where nu
+which nu
+plugin add $which(nu_plugin_gstat)
+plugin add $(which nu_plugin_gstat)
+nu_plugin_gstat 
+plugin add /usr/bin/nu_plugin_gstat
+plugin use /usr/bin/nu_plugin_gstat
+z dwm
+ls
+gstat
+ghostty 
+z dwm
+gstat
+exit
+exit
+nu
+exit
+nu
+exit
+cd code
+ls
+rm -rf nushell
+ls
+plugin list
+z dwm
+gstat
+exit
+tmux
+z
+z gh
+ls
+exit
+nvim config
+exit
+ghostty 
+exit
+ls /usr/bin/
+ls /usr/bin/nu_pl*
+ls
+z dwm
+alias gwch = git whatchanged -p --abbrev-commit --pretty=medium
+nvim config.h
+alias gwch = git whatchanged -p --abbrev-commit --pretty=medium
+ls
+nvim config.h
+mkdir ($nu.data-dir | path join "vendor/autoload")<\n>starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
+ls
+eixt
+exit
+z
+cd notes
+z dwm
+gst
+z
+ls
+exit
+nvim todo-list.md
+fish
+exit
+tmux
+exit
+neofetch
+cd code
+ls
+cd go-project/
+ls
+cd lemon-dict/
+ls
+tmux --session dev-server
+tmux -s dev-server
+tmux -h
+tmux new-session dev-server
+tmux new-session dev
+exit
+tmux
+tmux killallsession
+tmux list
+tmux list-sessions
+ls
+exit
+tmux a
+nvim Makefile
+tmux
+ls
+nvim main.go
+nvim
+nvim main.go
+make live/all
+z nvim
+nvim init.lua
+exit
+ls
+vls
+ls
+make live/all
+air
+ls
+ps 3000
+lsof -i 3000
+lsof -i :3000
+kill -9 37858
+z nvim
+nvim init.lua
+nvim main.go
+z nvim
+nvim init.lua
+exit
+ls
+pro
+paru
+ls
+eixt
+exit
+nvim
+pro
+nvim
+paru
+ls
+cd dotfiles/
+yazi
