@@ -1,23 +1,38 @@
-# theme = GruvboxDark
-theme = rose-pine-moon
+# theme = "Gruvbox Material Dark"
+# theme = "Rose Pine Moon"
+theme = "Nord"
+# theme = "iTerm2 Solarized Dark"
+background-opacity = 1
+background-blur-radius = 30
 
+font-size = 24
+font-family = "IosevkaTerm Nerd Font Mono"
+# font-family = "GohuFont 14 Nerd Font Mono" # pixel style
+# font-family = "Input Mono Compressed" # lean style
+# font-family = "Operator Mono Lig"
 # font-family = "Operator Mono Lig Book"
-font-family = "Hack Nerd Font Mono"
-# font-family = "RobotoMono Nerd Font"
-# font-family = "FiraCode Nerd Font Mono"
 # font-family = "JetBrainsMono Nerd Font Mono"
+# font-family = "Google sans Code"
+# font-family = "Hack Nerd Font Mono"
+# font-family = "Comic Code"
+# font-family = "Fira Code"
 
-font-size = 16
-
-cursor-style = block
+cursor-style = "block"
+# shell-integration-features = no-cursor
 cursor-style-blink = true
+cursor-invert-fg-bg = true
+
 mouse-hide-while-typing = true
 
-background-opacity = 0.8
-background-blur-radius = 0
+window-decoration = auto
+macos-titlebar-style = hidden
 
-window-decoration = false
-
-keybind = ctrl+shift+o=ignore
+window-padding-x = 1
+window-padding-y = 1
+window-padding-balance = true
 
 confirm-close-surface = false
+
+macos-option-as-alt = true
+
+# term = "xterm-256color"
